@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Jong | Gespecialeerd in de VisIndustrie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="dejong.png" type="image/png">
+
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="salmon.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <header class="overlay">
+            <div class="logo" style="    margin-top: 35px;">
+                <img src="dejong.png" alt="Logo">
+            </div>
+            <nav class="navbar">
+                <button class="explore-btn">EXPLORE</button>
+                <ul>
+                    <li><a href="#">Home</a></li>|
+                    <li><a href="#">About Us</a></li>|
+                    <li><a href="#">Products</a></li>|
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
+        </div>
+        <!--Header ends-->
+    
+        <div class="two-container-section">
+            <div class="image-container">
+                <img src="images/transparent-image.png" alt="Beschrijving afbeelding">
+            </div>
+            <div class="text-container">
+                <h2>Jouw Headline Hier</h2>
+                <p>Dit is de tekst die je kunt toevoegen onder je headline. Vertel je verhaal of bied informatie over je product.</p>
+            </div>
+        </div>        
+
+    </div>
+    <script>
+        // Voeg het bovenstaande script hier in
+        let originalTitle = document.title;
+
+        window.addEventListener("blur", function() {
+            document.title = "Hey! Kom je nog terug?";
+        });
+
+        window.addEventListener("focus", function() {
+            document.title = "Welkom terug!";
+        });
+    </script>
+</body>
+</html>
